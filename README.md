@@ -3,11 +3,13 @@
 ![](https://github.com/wazakkyd/dqx_exp_receive/blob/images/sample.jpg?raw=true)
 
 ドラゴンクエスト10では、ストーリーやクエストの経験値をコンシェルジュに預けることができます。
-預けた経験値を、特定の職で受け取るとき、一体どのくらいレベルが上がるのか？これを計算するプログラムです。
+預けた経験値を、特定の職で受け取るとき、一体どのくらいレベルが上がるのか？これを計算するアプリです。
 
 ## ダウンロード
 
-実行ファイルをリリースしました。リンクからリリースバージョンをダウンロードしてクリックすれば使えます。
+実行ファイルをリリースしました。  
+https://github.com/wazakkyd/dqx_exp_receive/releases/tag/v1.0.0  
+上記リンクから[dqx_receive_exp_check_v1.0.0.exe](https://github.com/wazakkyd/dqx_exp_receive/releases/download/v1.0.0/dqx_receive_exp_check_v1.0.0.exe)をダウンロードしてください。
 
 ## 使い方
 
