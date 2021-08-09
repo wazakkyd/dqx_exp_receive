@@ -45,3 +45,6 @@ https://github.com/wazakkyd/dqx_exp_receive/releases/tag/v1.0.0
 
 [レベルアップ必要経験値とスキルポイント \|ドラクエ10極限攻略](https://xn--10-yg4a1a3kyh.jp/dq10_level.html)
 
+## その他
+何かありましたら、issueにお願いします。
+
