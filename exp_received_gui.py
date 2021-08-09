@@ -6,10 +6,11 @@ from utils.received_exp import INIT_JOB, ADD_JOB, GADABOUT_JOB
 from utils.received_exp import received_exp_check, print_results, load_csv
 
 # リソースパスの取得（実行ファイル用）
-def resourcePath(filename):
+def resourcePath(filename, exec_directory):
     if hasattr(sys, "_MEIPASS"):
+        filename = os.path.basename(filename)
         return os.path.join(sys._MEIPASS, filename)
-    return os.path.join(filename)
+    return os.path.join(exec_directory, filename)
 
 
 exec_directory = os.path.dirname(sys.argv[0])
@@ -58,8 +59,8 @@ while True:
     if event == "calculate":
         if all(values.values()): 
             user = (values["job"], int(values["lv"]), int(values["next_exp"]))
-            csv_path = os.path.join(exec_directory, "csv", "exp_info.csv")
-            csv_path = resourcePath(csv_path)
+            csv_path = os.path.join("csv", "exp_info.csv")
+            csv_path = resourcePath(csv_path, exec_directory)
             exp_info = load_csv(csv_path)
             results = received_exp_check(exp_info, user, int(values["receiving_exp"]))
             if results is None:
